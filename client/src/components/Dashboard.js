@@ -7,6 +7,10 @@ import UserPanel from '../dashbord/UserPanel';
 import loadLogo from '../assests/home/loadImg.png'
 import { FaUser } from 'react-icons/fa';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 const Dashboard = () => {
@@ -56,7 +60,11 @@ const Dashboard = () => {
                                 <FaUser className="inline mr-2" />
                                 {logindata ? logindata.ValidUserOne.email : ""}
                             </div>
-                            <UserPanel />
+                            <div>
+                            <ToastContainer />
+                            <UserPanel/>
+                            </div>    
+                           
                         </div>
                     ) : (
                         <Box

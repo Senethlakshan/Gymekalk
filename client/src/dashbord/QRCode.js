@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function QRCode() {
   const [date, setDate] = useState(new Date());
@@ -27,12 +30,9 @@ function QRCode() {
           <FaUser className='text-4xl mr-4' />
           <h1 className='text-4xl font-bold'>Profile Details</h1>
         </div>
+
         <div>
-          <p className='text-gray-600 mb-2'>Name: </p>
-          <input type='text' className='w-full border border-gray-300 rounded-md p-2 mb-4' />
-          <p className='text-gray-600 mb-2'>Address: </p>
-          <input type='text' className='w-full border border-gray-300 rounded-md p-2 mb-4' />
-          <button className='bg-blue-500 text-white font-bold py-2 px-4 rounded'>Update</button>
+          
         </div>
       </div>
       {/* Second Part */}

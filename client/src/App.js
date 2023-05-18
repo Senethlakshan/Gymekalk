@@ -10,7 +10,7 @@ import Services from './components/homepage/Services'
 import Blog1 from '../src/components/homepage/article1'
 import Blog2 from '../src/components/homepage/article2'
 import Blog3 from '../src/components/homepage/article3'
-
+import Adminlogin from "./adminLOG/Adminlogin";
 import Profile from './dashbord/Profile'
 import Packages from "./dashbord/Packages";
 
@@ -59,7 +59,6 @@ function App() {
     },2000)
 
   }, [])
-
   return (
     <>
       {
@@ -81,6 +80,7 @@ function App() {
               <Route path="/article-Yoga-and-Pilates" element={<Blog3 />} />
               <Route path="/dash/profile" element={<Profile />} />
               <Route path="/dash/settings" element={<Packages />} />
+              <Route path="/adminlogin" element={<Adminlogin />} />
             </Routes>
           </>
 
