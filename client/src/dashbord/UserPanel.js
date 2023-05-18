@@ -9,6 +9,7 @@ import { FaUser, FaDumbbell, FaQrcode, FaShoppingCart, FaUserCircle,FaThList } f
 
 function UserPanel() {
     const [currentPage, setCurrentPage] = useState('user');
+    
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
@@ -35,6 +36,7 @@ function UserPanel() {
                     >
                         <FaDumbbell className='mr-2' />
                         Fitness Info
+
                     </li>
                     <li
                         className='flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700'
@@ -57,6 +59,7 @@ function UserPanel() {
                         <FaUserCircle className='mr-2' />
                         Profile
                     </li>
+                    
                 </ul>
             </div>
             <div className='flex-1 p-1'>
