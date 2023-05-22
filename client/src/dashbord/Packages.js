@@ -119,7 +119,7 @@ function Packages() {
         </div>
         
       </div>
-      <div className='bg-blue-400 mt-8 rounded-xl w-1225 h-343 p-3 '>
+      <div className='bg-gradient-to-r from-sky-400 to-blue-500 mt-8 rounded-xl w-1225 h-343 p-3 '>
          <UserPaymentDetails/>
         </div>
       {/* Popup box */}
