@@ -93,7 +93,7 @@ const UserPaymentDetails = () => {
                 <li key={index}>
                   <button
                     className={`py-1 px-3 mx-1 rounded ${
-                      currentPage === index + 1 ? 'bg-gray-300 text-white' : 'bg-blue-400 text-white'
+                      currentPage === index + 1 ? 'bg-blue-300 text-white' : 'bg-blue-400 text-white'
                     }`}
                     onClick={() => paginate(index + 1)}
                   >
